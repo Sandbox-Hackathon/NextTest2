@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Test from './test';
+import Link from 'next/link';
+import CoolThing from './about/page';
 
 export default function Home() {
   return (
@@ -93,6 +95,12 @@ export default function Home() {
             Explore the Next.js 13 playground.
           </p>
         </a>
+
+        <Link href="./about">
+          <>
+            <h1>Click Here to go to about page</h1>
+          </>
+        </Link>
 
         <a
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
